@@ -10,6 +10,17 @@ const {
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', { raw: tjClassNames }],
   theme: {
+    spacing: {
+      px: '1px',
+      0: '0px',
+      ...Object.fromEntries(
+        [...Array(400)].map((_, index) => {
+          const pixel = 1 + index;
+
+          return [pixel, `${pixel / 16}rem`];
+        }),
+      ),
+    },
     extend: {
       fontFamily: {
         sans: ['var(--font-pretendard)', ...fontFamily.sans],
