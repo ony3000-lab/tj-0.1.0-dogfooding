@@ -5,12 +5,13 @@ import { Button } from 'tailwind-joy/components';
 export default function ButtonComparison() {
   return (
     <CssVarsProvider>
-      <div className="flex min-h-screen flex-col gap-32 bg-white px-20 py-32">
+      <div className="flex items-center gap-32 bg-white p-80">
         <div className="space-y-8">
           <div>
             <JoyButton
               size="sm"
-              color="success"
+              color="danger"
+              className="font-[inherit]"
             >
               Button
             </JoyButton>
@@ -18,7 +19,8 @@ export default function ButtonComparison() {
           <div>
             <Button
               size="sm"
-              color="success"
+              color="danger"
+              className="font-[inherit]"
             >
               Button
             </Button>
@@ -26,17 +28,28 @@ export default function ButtonComparison() {
         </div>
         <div className="space-y-8">
           <div>
-            <JoyButton>Button</JoyButton>
+            <JoyButton
+              color="success"
+              className="font-[inherit]"
+            >
+              Button
+            </JoyButton>
           </div>
           <div>
-            <Button>Button</Button>
+            <Button
+              color="success"
+              className="font-[inherit]"
+            >
+              Button
+            </Button>
           </div>
         </div>
         <div className="space-y-8">
           <div>
             <JoyButton
               size="lg"
-              color="danger"
+              color="primary"
+              className="font-[inherit]"
             >
               Button
             </JoyButton>
@@ -44,7 +57,8 @@ export default function ButtonComparison() {
           <div>
             <Button
               size="lg"
-              color="danger"
+              color="primary"
+              className="font-[inherit]"
             >
               Button
             </Button>
